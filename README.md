@@ -1,12 +1,11 @@
-# asustufa15arch
 Connection
--
+
 ip addr show
 systemctl status sshd
 passwd
 
 connect via putty
--
+
 
 Partiton / Initial setup
 sudo pacman -Suy
@@ -18,7 +17,7 @@ pacman -Sy archlinux-keyring
 pacman -S archinstall
 
 
--
+
 
 mirrors
 profiles-desktop-kde
@@ -27,7 +26,7 @@ pipewire
 networkmanager
 user
 
--
+
 
 nano /etc/pacman.conf
 uncomment multilib
@@ -41,12 +40,12 @@ sudo pacman -S fastfetch
 
 
 Yay
--
+
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
--
+
 Nvidia + asusctl + grub (timeout)
 yay -S nvidia-dkms nvidia-utils lib32-nvidia-utils
 
@@ -56,7 +55,7 @@ timeout 0
 picker hidden
 grub-mkconfig -o /boot/grub/grub.cfg
 
--
+
 
 Apps
 EasyEffects (settings start as a service) + Presets
@@ -77,7 +76,7 @@ Stremio
 Kcalc
 Gwenview
 
--
+
 
 SDDM CursorFix
 
@@ -90,7 +89,7 @@ GreeterEnvironment=QT_WAYLAND_SHELL_INTEGRATION=layer-shell
 [Wayland]
 CompositorCommand=kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1
 
--
+
 
 Btrfs snapshots
 
@@ -102,7 +101,8 @@ sudo systemctl edit --full grub-btrfsd
 ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto
 grub-mkconfig -o /boot/grub/grub.cfg
 
--
+
+
 
 
 
