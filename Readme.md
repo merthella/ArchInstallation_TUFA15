@@ -51,11 +51,10 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ### Core Applications
 ```bash
 # System utilities
-pacman -S waydroid,
-https://github.com/casualsnek/waydroid_script
+yay -S waydroid + https://github.com/casualsnek/waydroid_script
 
 # Gtk apps cursor
-xdg-desktop-portal-gtk
+pacman -S xdg-desktop-portal-gtk
 
 # Gaming
 pacman -S steam 
