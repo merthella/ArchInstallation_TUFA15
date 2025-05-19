@@ -7,7 +7,9 @@ sudo pacman -Suy
 lsblk
 gdisk /dev/nvme0n1
 # Use commands: x, z, y, y
+```
 
+```bash
 pacman -Sy archlinux-keyring
 pacman -S archinstall
 ```
