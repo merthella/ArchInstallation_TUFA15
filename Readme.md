@@ -17,7 +17,7 @@ pacman -S archinstall
 nano /etc/pacman.conf
 # Uncomment multilib repository
 
-sudo pacman -S firefox flatpak flatpak-kcm zip rar kvantum fastfetch
+sudo pacman -S firefox flatpak flatpak-kcm zip kvantum fastfetch
 ```
 
 ## Post-Reboot Setup
@@ -31,12 +31,14 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 
 ## NVIDIA Drivers
 ```bash
-yay -S nvidia-open nvidia-utils lib32-nvidia-utils
+yay -S nvidia-open-dkms nvidia-utils lib32-nvidia-utils
 ```
 
 ## ASUS Control Utilities
 [ASUS Linux Guide](https://asus-linux.org/guides/arch-guide/)
-
+```bash
+It is important to install the G14'kernel here, otherwise the dgpu will heat up if the device is turned off while charging [5/19/2025]
+```
 ## Grub Configuration
 ```bash
 sudo nano /etc/default/grub
@@ -70,11 +72,6 @@ pacman -S easyeffects
 # Utilities
 pacman -S kcalc
 pacman -S gwenview
-```
-
-### Flatpak Applications
-```bash
-flatpak install prismlauncher bedrocklauncher vesktop zenbrowser
 ```
 
 ## SDDM Cursor Fix
