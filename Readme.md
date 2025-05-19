@@ -18,7 +18,9 @@ pacman -S archinstall
 ```bash
 nano /etc/pacman.conf
 # Uncomment multilib repository
+```
 
+```bash
 sudo pacman -S firefox flatpak flatpak-kcm zip kvantum fastfetch
 ```
 
