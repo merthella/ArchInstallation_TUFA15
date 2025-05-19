@@ -1,5 +1,7 @@
 
 # Arch Linux Setup Guide
+![dlcdnwebimgs asus](https://github.com/user-attachments/assets/a5bcb1b3-1eac-47ea-a13f-08d65e5cc2c0)
+
 
 ## Partitioning & Initial Setup
 ```bash
